@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Recados</title>
+  </head>
+  <body class="bg-dark bg-opacity-25">
+    <div class="cabeçalho d-flex justify-content-between p-3">
+      <p class="h3">Meus recados</p>
+      <button id="sair" class="sair" onclick="sair()">Sair</button>
+    </div>
+    <div id="mensagem">
+      <form id="formularioNovo" action="">
+        <div class="campos d-flex justify-content-around p-2">
+          <input
+            type="text"
+            name="descricao"
+            id="descricao"
+            required
+            class="descricao"
+            placeholder="Descrição"
+          />
+          <input
+            type="text"
+            name="detalhamento"
+            id="detalhamento"
+            required
+            class="detalhamento"
+            placeholder="Detalhamento"
+          />
+          <input type="submit" class="salvar" value="Salvar" />
+        </div>
+      </form>
+    </div>
+    <table id="tabela" class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Detalhamento</th>
+          <th scope="col">Ação</th>
+        </tr>
+      </thead>
+      <tbody id="corpoTabela"></tbody>
+    </table>
+    <script src="./script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

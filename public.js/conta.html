@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>Cadastro</title>
+  </head>
+  <body class="bg-dark bg-opacity-25">
+    <div class="container-fluid mh-100 mw-100">
+        <div class="row">
+          <div class="col-md-8 col-sm-12 imagem p-3">
+            <img class="img-fluid rounded-2" src="../images/ponteNY.jpg" alt="" />
+          </div>
+          <div class="col-md-4 col-sm-12 login bg-transparent align-self-center">
+            <p class="h3 text-center">Cadastro</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Email</span>
+              <input
+                type="email"
+                class="email form-control rounded-2 border-2 border-info p-2"
+                placeholder="joao@silva"
+                required
+                id="email"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Senha</span>
+              <input
+                type="password"
+                class="senha1 form-control rounded-2 border-2 border-info p-2"
+                required
+                id="senha1"
+              />
+            </div>
+            <div class="input-group mb-3">
+
+                <span class="input-group-text">Repita a senha</span>
+                <input
+                type="password"
+                class="senha2 form-control rounded-2 border-2 border-info p-2"
+                required
+                id="senha2"
+                />
+            </div>
+            <div class="botao mt-2 text-center">
+              <button
+                onclick="cadastrar()"
+                class="botaoCriarConta btn btn-outline-info bg-dark bg-opacity-50"
+                id="btnCadastro"
+              >
+                Criar conta
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

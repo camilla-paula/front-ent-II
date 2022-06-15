@@ -1,0 +1,12 @@
+.login {
+  animation-name: itemAnimado;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+  animation-duration: 1s;
+}
+
+@keyframes itemAnimado {
+  to {
+    transform: translateY(200px);
+  }
+}

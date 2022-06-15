@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Login</title>
+  </head>
+  <body class="bg-dark bg-opacity-25">
+    <div class="container-fluid mh-100 mw-100">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 imagem p-3">
+          <img class="img-fluid rounded-2" src="../images/ponteNY.jpg" alt="" />
+        </div>
+        <div class="col-md-4 col-sm-12 login bg-transparent align-self-center">
+          <p class="h3 text-center">Login</p>
+          <div class="input-group mb-3 align-middle">
+            <span class="input-group-text">Email</span>
+            <input
+              required
+              type="email"
+              class="emailLogin form-control rounded-2 border-2 border-info p-2"
+              placeholder="joao@silva"
+              id="emailLogin"
+            />
+          </div>
+          <div class="input-group">
+            <span class="input-group-text">Senha</span>
+            <input
+              required
+              type="password"
+              class="password form-control rounded-2 border-2 border-info p-2"
+              id="password"
+            />
+          </div>
+          <div class="botao mt-2 text-center">
+            <button
+              onclick="login()"
+              id="btnLogin"
+              type="submit"
+              class="botaoEntrar btn btn-outline-info bg-dark bg-opacity-50"
+            >
+              Entrar
+            </button>
+          </div>
+          <div class="criarConta text-uppercase text-center">
+            <a
+              class="text-decoration-none border-light text-dark"
+              href="../public.js/conta.html"
+              >Criar conta</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
